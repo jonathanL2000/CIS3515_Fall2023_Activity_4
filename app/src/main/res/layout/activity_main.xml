@@ -11,11 +11,10 @@
         android:id="@+id/textSizeDisplayTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="224dp"
-        android:layout_marginTop="708dp"
+        android:layout_marginTop="24dp"
         android:text="Hello World!"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="@id/guideline" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/textSizeSelectorRecyclerView"
@@ -32,5 +31,15 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.6"
         app:layout_constraintHeight_percent="0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="206dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="205dp"
+        app:layout_constraintGuide_percent="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
