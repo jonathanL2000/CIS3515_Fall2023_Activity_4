@@ -42,7 +42,7 @@ class TextSizeAdapter(_textSizes: Array<Int>, _callback: (Float) -> Unit) : Recy
     inner class TextSizeViewHolder(view: TextView) : RecyclerView.ViewHolder (view) {
         val textView = view
         init {
-            textView.setOnClickListener {callback}
+            textView.setOnClickListener {callback(textSizes[adapterPosition].toFloat())}
         }
       }
 

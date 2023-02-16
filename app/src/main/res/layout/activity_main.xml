@@ -11,8 +11,10 @@
         android:id="@+id/textSizeDisplayTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="169dp"
         android:text="Hello World!"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
         app:layout_constraintStart_toStartOf="@id/guideline2"
         app:layout_constraintTop_toTopOf="@id/guideline" />
 
@@ -38,8 +40,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="206dp"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="205dp"
-        app:layout_constraintGuide_percent="0.5"
+        app:layout_constraintGuide_begin="206dp"
+        app:layout_constraintGuide_percent=".5"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
